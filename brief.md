@@ -3,13 +3,22 @@ Version: NAFATH-V1
 Track: Software
 
 ## Overview
-
 A national digital login service allows citizens to access multiple government services using one account. Software standards help verify users’ identities and control access to protected resources. Artificial intelligence can help detect suspicious login attempts, but its accuracy and risks must be assessed before deployment. Mobile applications should request only the permissions they need to protect users’ privacy. Secure networking, including DNS over HTTPS, can protect DNS queries during transmission, although it does not hide all online activity. Phishing-resistant authentication helps reduce the risk of attackers stealing login credentials. Data protection requirements also guide how citizens’ personal information is collected, processed, and stored. Together, these areas support a secure and trustworthy digital service. A key software question is how OAuth 2.0 differs from OpenID Connect, particularly in delegated access to resources and verifying a user’s identity.
+
 ## Software
+OAuth 2.0 and OpenID Connect serve related but different purposes. OAuth 2.0 allows an application to obtain limited access to protected resources using access tokens. OpenID Connect adds an identity layer on top of OAuth 2.0, allowing a client to verify a user's identity through an ID Token. For a national login service, this distinction matters because confirming who the user is differs from deciding which resources an application can access.
+
+Resource: OpenID Connect Core 1.0 - https://openid.net/specs/openid-connect-core-1_0.html
 
 ## AI
+Before deploying an AI model to flag suspicious login attempts, the organization should assess its risks and test how reliably it identifies unusual activity. The model may incorrectly flag legitimate users or miss suspicious behavior. The NIST AI Risk Management Framework helps organizations manage AI risks and consider trustworthiness, including validity, reliability, security, transparency, privacy, and fairness. Monitoring the model after deployment is also important.
+
+Resource: NIST AI Risk Management Framework - https://www.nist.gov/itl/ai-risk-management-framework
 
 ## Mobile
+Android runtime permissions control access to certain device features and personal data. When an app needs a permission that requires user approval, it should request it at the appropriate time and explain why it is needed. For a national login app, permissions should be limited to what the feature requires. Requesting unnecessary permissions can reduce user trust and create avoidable privacy risks.
+
+Resource: Permissions on Android - https://developer.android.com/guide/topics/permissions/overview
 
 ## Networking
 
