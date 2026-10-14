@@ -21,10 +21,19 @@ Android runtime permissions control access to certain device features and person
 Resource: Permissions on Android - https://developer.android.com/guide/topics/permissions/overview
 
 ## Networking
+DNS over HTTPS (DoH) sends DNS queries and responses through HTTPS, encrypting them while they travel between the client and the DNS resolver. This makes it harder for other parties on the network to read or interfere with DNS requests. However, DoH does not hide all online activity or prevent every security threat. The DNS server and other parts of the network may still learn some information about the connection.
+
+Resource: RFC 8484: DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484.html
 
 ## Cybersecurity
+Phishing-resistant multi-factor authentication (MFA) helps protect users from fake login websites designed to steal credentials. CISA identifies FIDO/WebAuthn authentication as a widely available phishing-resistant method. It can use a security key or an authenticator built into a device. By contrast, SMS codes can be stolen through phishing and should not be treated as phishing-resistant. A national login service should prioritize stronger authentication methods.
+
+Resource: Implementing Phishing-Resistant MFA - https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
 
 ## Data
+Oman’s Personal Data Protection Law and its Executive Regulations set requirements for organizations that process personal data. Depending on the circumstances, obligations may include obtaining consent, securing permits for specified types of data processing, maintaining processing records, and providing ways for individuals to exercise their rights. Organizations must also follow applicable breach-notification and cross-border data transfer requirements. These measures help protect citizens’ personal information in a national login service.
+
+Resource: Personal Data Protection - Ministry of Transport, Communications and Information Technology, Oman - https://www.mtcit.gov.om/sectors/governance/personal
 
 ## Misconception in My Track
 
