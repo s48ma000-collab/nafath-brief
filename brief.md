@@ -36,5 +36,9 @@ Oman’s Personal Data Protection Law and its Executive Regulations set requirem
 Resource: Personal Data Protection - Ministry of Transport, Communications and Information Technology, Oman - https://www.mtcit.gov.om/sectors/governance/personal
 
 ## Misconception in My Track
+A common misconception is that OAuth 2.0 alone is a complete login protocol that tells an application who the user is. OAuth 2.0 is mainly designed to provide delegated access to protected resources. OpenID Connect adds an identity layer on top of OAuth 2.0 and allows a client to verify the user's identity using an ID Token. This distinction is important for a national login service because granting access to resources and verifying a person's identity are related but different tasks.
+
+Evidence: OpenID Connect Core 1.0, Section 1: Introduction.
 
 ## Open Question
+How can a national login service balance strong phishing-resistant authentication with accessibility for citizens who use older devices or have limited access to security keys?
